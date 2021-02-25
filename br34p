@@ -3,13 +3,13 @@
 pragma solidity ^0.6.4;
 
 /**
-    BR34P is a soft fork of R34P that incorporates adjustable
+    WSBC is a soft fork of BR34P that incorporates adjustable
     yield rates (so early buyers can continue to earn reasonable yields as
-    more holders enter the ecosystem). BR34P also has a deflationary supply
+    more holders enter the ecosystem). WSBC also has a deflationary supply
     and fair-launch mechanisms to ensure a healthy distribution of tokens.
     
   
-    Telegram: https://t.me/BR34P
+    Telegram: https://t.me/wsbctoken
     
  */
 abstract contract Context {
@@ -459,7 +459,7 @@ contract Ownable is Context {
     }
 }
 
-contract BR34P is Context, IERC20, Ownable {
+contract WSBC is Context, IERC20, Ownable {
     using SafeMath for uint256;
     using Address for address;
 
@@ -476,8 +476,8 @@ contract BR34P is Context, IERC20, Ownable {
     uint256 private _tFeeTotal;
     uint256 private _tBurnTotal;
 
-    string private _name = 'BR34P';
-    string private _symbol = 'BR34P';
+    string private _name = 'WSBC';
+    string private _symbol = 'WSBC';
     uint8 private _decimals = 8;
     
     uint256 private _taxFee = 1;
